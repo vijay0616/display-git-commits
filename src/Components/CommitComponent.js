@@ -50,7 +50,7 @@ const CommitComponent = () => {
                 <b className="text-[#39496A]">{commitData?.author?.name}</b>{" "}
                 {moment(commitData?.author?.date).fromNow()}
               </span>
-              <span>{commitData?.subject}</span>
+              <span>{commitData?.body}</span>
             </div>
             {/* Display commit information for committer if different from author */}
             {commitData?.author.name !== commitData?.committer.name && (
